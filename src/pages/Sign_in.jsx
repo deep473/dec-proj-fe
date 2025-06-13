@@ -8,9 +8,7 @@ export default function Sign_in() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
     const data = { username, password };
-
     try {
       const resp = await fetch("http://localhost:8080/signIn", {
       method: "POST",
@@ -20,10 +18,7 @@ export default function Sign_in() {
       },
       body: JSON.stringify(data),
     });
-
-
       const msg = await resp.text(); 
-
       if (msg === "admin" || msg === "customer") {
         localStorage.setItem("username", username); 
         navigate(`/${msg}_home`);
