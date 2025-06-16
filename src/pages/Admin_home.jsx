@@ -7,7 +7,7 @@ export default function Admin_home() {
       <h3>Welcome to Admin Home</h3>
 
       <NavLink to = "/addProd">Add Product</NavLink>
-      <NavLink to = "/viewAllProd">View all Products</NavLink>
+      <NavLink to = "/showProducts">View all Products</NavLink>
     </>
   )
 }

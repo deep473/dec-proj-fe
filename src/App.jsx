@@ -6,6 +6,7 @@ import Admin_home from "./pages/Admin_home";
 import Customer_home from "./pages/Customer_home";
 import Add_product from "./pages/Add_product";
 import Show_products from "./pages/Show_products";
+import UpdateProduct from "./pages/UpdateProduct";
 
 function App() {
   
@@ -20,7 +21,9 @@ function App() {
 
           <Route path = "/addProd"  element = {<Add_product
            />} />
-          <Route path = "/viewAllProd"  element = {<Show_products />} />
+          <Route path = "/showProducts"  element = {<Show_products />} />
+
+          <Route path="/updateProduct" element={<UpdateProduct />} />
       </Routes>
     </>
   )
