@@ -7,7 +7,7 @@ import Customer_home from "./pages/Customer_home";
 import Add_product from "./pages/Add_product";
 import Show_products from "./pages/Show_products";
 import UpdateProduct from "./pages/UpdateProduct";
-
+import Cart from "./pages/Cart";
 function App() {
   
   return (
@@ -24,6 +24,8 @@ function App() {
           <Route path = "/showProducts"  element = {<Show_products />} />
 
           <Route path="/updateProduct" element={<UpdateProduct />} />
+
+          <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   )
